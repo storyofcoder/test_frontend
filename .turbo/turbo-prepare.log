@@ -1,0 +1,57 @@
+[graphql] npm WARN ignoring workspace config at /Users/munnykumar/Documents/mine/interface/apps/web/.npmrc 
+[i18n] npm WARN ignoring workspace config at /Users/munnykumar/Documents/mine/interface/apps/web/.npmrc 
+[ajv] npm WARN ignoring workspace config at /Users/munnykumar/Documents/mine/interface/apps/web/.npmrc 
+[contracts] npm WARN ignoring workspace config at /Users/munnykumar/Documents/mine/interface/apps/web/.npmrc 
+[graphql] 
+[graphql] > @uniswap/interface@1.1.0 graphql
+[graphql] > yarn graphql:fetch && yarn graphql:generate
+[graphql] 
+[ajv] 
+[ajv] > @uniswap/interface@1.1.0 ajv
+[ajv] > node scripts/compile-ajv-validators.js
+[ajv] 
+[i18n] 
+[i18n] > @uniswap/interface@1.1.0 i18n
+[i18n] > yarn i18n:extract --clean && yarn i18n:compile
+[i18n] 
+[contracts] 
+[contracts] > @uniswap/interface@1.1.0 contracts
+[contracts] > yarn contracts:compile:abi && yarn contracts:compile:v3
+[contracts] 
+[ajv] node:internal/fs/utils:351
+[ajv]     throw err;
+[ajv]     ^
+[ajv] 
+[ajv] Error: ENOENT: no such file or directory, open '/Users/munnykumar/Documents/mine/interface/apps/web/src/utils/__generated__/validateTokenList.js'
+[ajv]     at Object.openSync (node:fs:592:3)
+[ajv]     at Object.writeFileSync (node:fs:2324:35)
+[ajv]     at Object.<anonymous> (/Users/munnykumar/Documents/mine/interface/apps/web/scripts/compile-ajv-validators.js:14:4)
+[ajv]     at Module._compile (node:internal/modules/cjs/loader:1257:14)
+[ajv]     at Module._extensions..js (node:internal/modules/cjs/loader:1311:10)
+[ajv]     at Module.load (node:internal/modules/cjs/loader:1115:32)
+[ajv]     at Module._load (node:internal/modules/cjs/loader:962:12)
+[ajv]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[ajv]     at node:internal/main/run_main_module:23:47 {
+[ajv]   errno: -2,
+[ajv]   syscall: 'open',
+[ajv]   code: 'ENOENT',
+[ajv]   path: '/Users/munnykumar/Documents/mine/interface/apps/web/src/utils/__generated__/validateTokenList.js'
+[ajv] }
+[ajv] 
+[ajv] Node.js v20.3.1
+[ajv] npm ERR! Lifecycle script `ajv` failed with error: 
+[ajv] npm ERR! Error: command failed 
+[ajv] npm ERR!   in workspace: @uniswap/interface@1.1.0 
+[ajv] npm ERR!   at location: /Users/munnykumar/Documents/mine/interface/apps/web 
+[ajv] npm run ajv exited with code 1
+[graphql] npm ERR! Lifecycle script `graphql` failed with error: 
+[graphql] npm ERR! Error: command failed 
+npm ERR!   in workspace: @uniswap/interface@1.1.0 
+[graphql] npm ERR!   at location: /Users/munnykumar/Documents/mine/interface/apps/web 
+[contracts] npm ERR! Lifecycle script `contracts` failed with error: 
+[contracts] npm ERR! Error: command failed 
+[contracts] npm ERR!   in workspace: @uniswap/interface@1.1.0 
+[contracts] npm ERR!   at location: /Users/munnykumar/Documents/mine/interface/apps/web 
+[graphql] npm run graphql exited with code 1
+[contracts] npm run contracts exited with code SIGINT
+[i18n] npm run i18n exited with code SIGINT
